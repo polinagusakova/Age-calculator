@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta description="" content="Age calculator app">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <form id="my-form">
+                <div class="inputs">
+                    <section class="inputs__day">
+                        <label for="day">Day</label>
+                        <input type="text" name="day" id="day" placeholder="DD" class="all-inputs">
+                        <p class="inputs--day-error errors"></p>
+                    </section>
+                    <section class="inputs__month">
+                        <label for="month">Month</label>
+                        <input type="text" name="month" id="month" placeholder="MM" class="all-inputs">
+                        <p class="inputs--month-error errors" ></p>
+                    </section>
+                    <section class="inputs__year">
+                        <label for="year">Year</label>
+                        <input type="text" name="year" id="year" placeholder="YYYY" class="all-inputs">
+                        <p class="inputs--year-error errors" ></p>
+                    </section>
+                </div>
+            </form>
+            <div class="elements">
+                <hr>
+                <button id="button" type='submit' form="my-form"><img src="./images/icon-arrow.svg" alt="Arrow icon for form submitting" class="icon-arrow"></button>
+            </div>          
+            
+            <div class="data">
+                <p class="data__year"><span class="data--newyear" id="newyear">--</span>years</p>
+                <p class="data__month"><span class="data--newmonth" id="newmonth">--</span>months</p>
+                <p class="data__day"><span class="data--newday" id="newday">--</span>days</p>
+            </div>
+        </div>
+    </main> 
+  
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#" aria-label="Author's name">Polina</a>.
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

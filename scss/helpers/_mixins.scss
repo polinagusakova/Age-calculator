@@ -1,0 +1,3 @@
+@mixin respond-mobile {
+    @media (max-width: 400px) { @content }
+}

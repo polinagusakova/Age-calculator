@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.container .inputs--day-error, .container .inputs--month-error, .container .inputs--year-error {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.container .inputs input, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container .data {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100svh;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 40rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px 20px 150px 20px;
+  gap: 1rem;
+}
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+.container .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  width: 30rem;
+}
+@media (max-width: 450px) {
+  .container .inputs {
+    width: 100%;
+  }
+}
+.container .inputs label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 0.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.container .inputs input {
+  border-radius: 5px;
+  border: 1.5px solid hsl(0, 0%, 86%);
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding-left: 1rem;
+}
+@media (max-width: 450px) {
+  .container .inputs input {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+.container .inputs input:focus {
+  outline: none;
+  border: 1.5px solid hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+.container .inputs input::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container .inputs input::-moz-placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container .inputs input:-ms-input-placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container .inputs input::-ms-input-placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container .inputs input::placeholder {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.container .inputs__day, .container .inputs__month, .container .inputs__year {
+  width: 8rem;
+}
+@media (max-width: 450px) {
+  .container .inputs__day, .container .inputs__month, .container .inputs__year {
+    width: 100%;
+  }
+}
+.container .inputs--day-error, .container .inputs--month-error, .container .inputs--year-error {
+  font-size: 0.7rem;
+  margin-top: 0.6rem;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+.container .elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.3rem;
+  width: 34rem;
+}
+@media (max-width: 450px) {
+  .container .elements {
+    width: 100%;
+  }
+}
+.container .elements button {
+  border-radius: 50px;
+  padding: 0;
+  background-color: hsl(259, 100%, 65%);
+  border: none;
+  width: 5rem;
+  height: 100%;
+}
+@media (max-width: 450px) {
+  .container .elements button {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+.container .elements button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+.container .elements button .icon-arrow {
+  border-radius: 50px;
+  width: 50%;
+}
+.container .elements hr {
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 100%;
+  height: 1.5px;
+}
+.container .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 5rem;
+}
+@media (max-width: 450px) {
+  .container .data {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+.container .data--newyear, .container .data--newmonth, .container .data--newday {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 0.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(259, 100%, 65%);
+}
