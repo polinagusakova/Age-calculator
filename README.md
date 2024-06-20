@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/polinagusakova/Contact-form-main)
-- Live Site URL: [GitHub Pages](https://polinagusakova.github.io/Contact-form-main/)
+- Solution URL: [GitHub](https://github.com/polinagusakova/Age-calculator)
+- Live Site URL: [GitHub Pages](https://polinagusakova.github.io/Age-calculator/)
 
 ## My process
 
